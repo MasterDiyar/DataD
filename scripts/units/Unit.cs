@@ -14,14 +14,9 @@ public partial class Unit : CharacterBody2D
         ResourceInit();
     }
 
-    public void TakeDamage(HitStruct data)
-    {
-        Stats.TakeDamage(data);
-    }
-
     void ResourceInit()
     {
-        Stats = Stats.Copy();
-        Soul = Soul.Copy(); 
+        Stats = Stats?.Copy();
+        Soul = Soul?.Copy(); 
     }
 }

@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://doqjvxbgt78mq"]
 
+[ext_resource type="Texture2D" uid="uid://6agwpyoitd2w" path="res://assets/building/coreM1.png" id="1_65j2h"]
+
 [node name="CoreM1" type="CharacterBody2D" unique_id=749145085]
+texture_filter = 3
+
+[node name="CoreM1" type="Sprite2D" parent="." unique_id=1153408122]
+position = Vector2(0, 1)
+texture = ExtResource("1_65j2h")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=689071752]
+polygon = PackedVector2Array(-10, -29, -30, -29, -30, -9, -20, -9, -20, 23, -24, 26, -24, 29, -21, 32, -18, 32, -15, 29, 2, 28, 10, 25, 27, 8, 27, -26, -10, -26)

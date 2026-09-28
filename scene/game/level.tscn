@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://cu3fv23a8byh4"]
 
+[ext_resource type="PackedScene" uid="uid://bcooohd7lst6p" path="res://scene/game/player/player.tscn" id="1_cknjw"]
+[ext_resource type="PackedScene" uid="uid://doqjvxbgt78mq" path="res://scene/game/cores/core_m_1.tscn" id="2_cknjw"]
+
 [node name="level" type="Node2D" unique_id=1710553448]
+
+[node name="player" parent="." unique_id=99655997 instance=ExtResource("1_cknjw")]
+
+[node name="CoreM1" parent="." unique_id=749145085 instance=ExtResource("2_cknjw")]
+position = Vector2(166, 99)
