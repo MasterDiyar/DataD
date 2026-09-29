@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BulletResource" format=3 uid="uid://c068xvq6vg7x8"]
+
+[ext_resource type="Script" uid="uid://cw6c0d28vyh5a" path="res://scripts/resources/BulletResource.cs" id="1_xf57p"]
+
+[resource]
+script = ExtResource("1_xf57p")
+metadata/_custom_type_script = "uid://cw6c0d28vyh5a"

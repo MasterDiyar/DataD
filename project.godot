@@ -22,6 +22,7 @@ project/assembly_name="DataDriver"
 
 folder_colors={
 "res://assets/": "red",
+"res://resources/": "green",
 "res://scripts/": "blue"
 }
 
