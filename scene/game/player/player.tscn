@@ -17,6 +17,7 @@ height = 26.0
 texture_filter = 3
 script = ExtResource("1_pdr03")
 Stats = SubResource("Resource_bb7td")
+Weapons = Array[Object]([])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=42572355]
 shape = SubResource("CapsuleShape2D_sdmle")

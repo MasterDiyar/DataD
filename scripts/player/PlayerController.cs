@@ -5,6 +5,9 @@ namespace DataDriver.scripts.player;
 
 public partial class PlayerController : Unit
 {
+    [Signal]
+    public delegate void AttackedEventHandler(Vector2 pos ,float angle);
+    
     [Export] private float Acceleration = 100f;
     private float CurrentSpeed;
     public override void _PhysicsProcess(double delta)
@@ -18,8 +21,7 @@ public partial class PlayerController : Unit
             CurrentSpeed = Mathf.Lerp(CurrentSpeed, Stats.MaxSpeed, Acceleration*dt);
             Velocity = inputDir * CurrentSpeed;
         }
-
-
+        if (Input.IsActionPressed("lm")) {EmitSignalAttacked(GlobalPosition, (GlobalPosition-GetGlobalMousePosition()).Angle());}
         MoveAndSlide();
     }
 
